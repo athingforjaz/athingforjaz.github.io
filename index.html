@@ -1,1 +1,150 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- MOVE THIS AFTER MAKING THE PAGE - LINKING WON'T WORK?? -->
+    <style>
+    
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        font-family: 'Raleway', sand-serif;
+        color: white;
+        background-color: #110a2a;;
+        background-image: url("styles/header.jpg");
+        background-repeat:no-repeat;
+        background-size: 100% 500px;
+    }
+
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    h2 {
+        font-family: 'Varela Round', sans-serif;
+        color: white;
+    }
+
+    .hero-text {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Varela Round', sans-serif;
+        color: #daf037;
+        font-size: 2em; 
+    }
+
+    .skills {
+        padding-top: 325px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill-item {
+        display: flex;
+        align-items: center;
+    }
+    .even {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .skill-text {
+        max-width: 400px;
+        height: auto;
+        margin: 10px;
+    }
+    .skill-icon {
+        max-width: 100px;
+        height: auto;
+        margin: 10px;
+    }
+    .hover-swap {
+        position: relative;
+        max-width: 100px;
+    }
+    .hover-swap img {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100px;
+        height: 100px;
+    }
+    .hover-swap .front {
+        z-index: 9999;
+        transition: opacity .25s linear;
+        cursor: pointer;
+    }
+    .hover-swap:hover > .front {
+        opacity: 0;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="hero-text">
+            <h1>Hello, World.</h1>
+            <span>I'm Jasmine.</span> 
+    </div>
+
+    <div class="skills">
+        <span>I’m a full-stack developer and digital communications professional living in Pittsburgh, PA.</span>
+
+        <h2>Full Stack Web Development</h2>
+        <div class="skill-item odd">
+            <div class="skill-icon"><img src="styles/icon1.png"></div>
+            <div class="skill-text">
+                <p>HTML/CSS | Javascript | React | C# | Ruby | MVC | SQL | Git </p>
+                <p>I'm a graduate of Academy Pittsburgh, a full-stack web development boot camp.</p>
+            </div>
+        </div>
+
+        <h2>Other Skills</h2>
+        <div class="skill-item even">
+            <div class="skill-icon"><img src="styles/icon2.png"></div>
+            <div class="skill-text">
+                <p>Web Copywriter | Content Strategist | SEO Pro | Analytics Whiz </p>
+                <p>I'm interested in digital communication methods, and got paid to talk to people online for a living for over ten years.</p>
+            </div>
+        </div>
+
+        <h2>Talk To Me About</h2>
+        <div class="skill-item odd">
+            <div class="skill-icon"><img src="styles/icon3.png"></div>
+            <div class="skill-text">
+                <p>Board Game Design | Knitting Pattern Design | Communications in the Age of Zoom</p>
+                <p>When I'm not in front of a computer, I'm probably creating a new board game, designing a knitted shawl, or practicing being a good friend from a distance.</p>
+            </div>
+        </div>
+
+        <h2>Let’s Chat</h2>
+        <div class="skill-item even">
+            <div class="skill-icon"><img src="styles/icon4.png"></div>
+            <div class="skill-text">
+                <p><a href="https://www.linkedin.com/in/jasmineadavis/">LinkedIn</a> | <a href="https://github.com/athingforjaz">Github</a></p>
+                <p>Or just <a href="mailto:jasminedaviswork@gmail.com">email me!</a></p>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <figure class="hover-swap">
+        <img class="front" src="styles/icon5.png" />
+        <img class="back" src="styles/icon6.png" />
+    </figure>
+
+</body>
+</html>

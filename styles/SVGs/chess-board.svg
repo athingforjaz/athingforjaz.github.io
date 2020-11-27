@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Capa_1"
+   enable-background="new 0 0 512 512"
+   height="200"
+   viewBox="0 0 200 200"
+   width="200"
+   version="1.1"
+   sodipodi:docname="chess-board.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   inkscape:export-filename="/Users/jasminedavis/Downloads/icon3.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <metadata
+     id="metadata923">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs921" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1590"
+     inkscape:window-height="969"
+     id="namedview919"
+     showgrid="false"
+     inkscape:zoom="1.4355469"
+     inkscape:cx="300.18093"
+     inkscape:cy="185.11299"
+     inkscape:window-x="3631"
+     inkscape:window-y="89"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Capa_1" />
+  <g
+     id="g916"
+     transform="scale(0.390625)"
+     style="fill:#cc40ff;fill-opacity:1">
+    <path
+       d="M 0,512 H 512 V 0 H 0 Z M 30,30 H 482 V 482 H 30 Z"
+       id="path912"
+       style="fill:#cc40ff;fill-opacity:1" />
+    <path
+       d="M 60,452 H 452 V 60 H 60 Z M 391,90 h 31 v 31 h -31 z m 0,61 h 31 v 30 h -31 z m 0,60 h 31 v 30 h -31 z m 0,60 h 31 v 30 h -31 z m 0,60 h 31 v 30 h -31 z m 0,60 h 31 v 31 H 391 Z M 331,90 h 30 v 31 h -30 z m 0,61 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 31 H 331 Z M 271,90 h 30 v 31 h -30 z m 0,61 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 31 H 271 Z M 211,90 h 30 v 31 h -30 z m 0,61 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 31 H 211 Z M 151,90 h 30 v 31 h -30 z m 0,61 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 30 h -30 z m 0,60 h 30 v 31 H 151 Z M 90,90 h 31 v 31 H 90 Z m 0,61 h 31 v 30 H 90 Z m 0,60 h 31 v 30 H 90 Z m 0,60 h 31 v 30 H 90 Z m 0,60 h 31 v 30 H 90 Z m 0,60 h 31 v 31 H 90 Z"
+       id="path914"
+       style="fill:#cc40ff;fill-opacity:1" />
+  </g>
+</svg>
