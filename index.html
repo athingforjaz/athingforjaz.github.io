@@ -19,6 +19,22 @@
          function img_off(img) {
              img.src = "styles/icon5.png";
          }
+
+         function lets_get_fancy() {
+            for(i=0; i<100; i++){
+                document.getElementById("big-box").innerHTML += '<div class="fancy-box" onmouseover="fancytime(this)" onmouseout="unfancy(this)"></div>'
+            }
+        }
+        function fancytime(divvy) {
+            let fancy_color = '#'+Math.floor(Math.random()*16777215).toString(16);
+            divvy.style.backgroundColor=fancy_color;
+            // divvy.style.boxShadow='0 0 15px magenta';
+        }
+
+        function unfancy(divvy) {
+            divvy.style.backgroundColor="";
+        }
+
     </script>
     
     <style>
@@ -28,7 +44,8 @@
     }
 
     body {
-        font-family: 'Raleway', sand-serif;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2em;
         color: white;
         background-color: #110a2a;
         background-image: url("styles/header.jpg");
@@ -47,17 +64,32 @@
 
     .hero-text {
         padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
         font-family: 'Varela Round', sans-serif;
         color: #daf037;
         font-size: 2em; 
         text-shadow: 0px 4px 4px #110a2a;
     }
 
+    .big-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .fancy-box {
+        height: 50px;
+        width: auto;
+        opacity: .50;
+        z-index: 9;
+    }
+
     .skills {
-        padding-top: 325px;
+        padding-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -69,6 +101,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 
     .skill-item {
@@ -77,7 +111,7 @@
     }
 
     .skill-text {
-        max-width: 400px;
+        max-width: 600px;
         height: auto;
         margin: 10px;
     }
@@ -98,11 +132,14 @@
     </style>
 
 </head>
-<body>
-    <div class="hero-text">
-            <h1>Hello, World.</h1>
-            <span>I'm Jasmine.</span> 
-    </div>
+<body onload="lets_get_fancy()">
+
+    <div class="big-box" id="big-box"><div class="hero-text" id="hero-text">
+        <h1>Hello, World.</h1>
+        <span>I'm Jasmine.</span> 
+</div></div>
+
+    
 
     <div class="skills">
         <span>I’m a full stack developer and digital communications professional living in Pittsburgh, PA.</span>
@@ -112,7 +149,7 @@
         <div class="skill-item">
             <div class="skill-icon"><img src="styles/icon1.png"></div>
             <div class="skill-text">
-                <p>HTML/CSS | JavaScript | React | C# | Ruby | MVC | SQL | Git </p>
+                <h3>HTML/CSS | JavaScript | React | C# | Ruby | MVC | SQL | Git </h3>
                 <p>I'm a graduate of Academy Pittsburgh, a full stack web development boot camp.</p>
             </div>
         </div>
@@ -171,7 +208,7 @@
         <div class="skill-item">
             <div class="skill-icon"><img src="styles/icon2.png"></div>
             <div class="skill-text">
-                <p>Web Copywriter | Content Strategist | SEO Pro | Analytics Whiz </p>
+                <h3>Web Copywriter | Content Strategist | SEO Pro | Analytics Whiz </h3>
                 <p>I'm interested in digital communication methods, and got paid to talk to people online for a living for over ten years.</p>
             </div>
         </div>
@@ -182,8 +219,17 @@
         <div class="skill-item">
             <div class="skill-icon"><img src="styles/icon3.png"></div>
             <div class="skill-text">
-                <p>Board Game Design | Knitting Pattern Design | Communications in the Age of Zoom</p>
-                <p>When I'm not in front of a computer, I'm probably creating a new board game, designing a knitted shawl, or practicing being a good friend from a distance.</p>
+                <h3>Board Game Design | Knitting Pattern Design | Communications in the Age of Zoom</h3>
+                <p>When I'm not in front of a computer, I'm probably creating a new board game, designing a knitted shawl, or practicing being a good friend from a distance.
+                </p>
+                <p>
+                Here are a few of my games:
+                <ul>
+                    <li><a href="https://boardgamegeek.com/boardgame/213755/rocket-cats-space">Rocket Cats in Space</a></li>
+                    <li><a href="https://boardgamegeek.com/boardgame/184443/bearanoia">Bearanoia</a></li>
+                    <li><a href="https://boardgamegeek.com/boardgame/326232/travelers">Travelers</a></li>
+                </ul>
+                </p>
             </div>
         </div>
         </div>
@@ -193,14 +239,15 @@
         <div class="skill-item">
             <div class="skill-icon"><img src="styles/icon4.png"></div>
             <div class="skill-text">
-                <p><a href="https://www.linkedin.com/in/jasmineadavis/">LinkedIn</a> | <a href="https://github.com/athingforjaz">Github</a></p>
-                <p>Or just <a href="mailto:jasminedaviswork@gmail.com">email me!</a></p>
+                <h3><a href="https://www.linkedin.com/in/jasmineadavis/">LinkedIn</a> | <a href="https://github.com/athingforjaz">Github</a></h3>
+                <p>Or just <a href="mailto:jasminedaviswork@gmail.com">email me!</a> </p>
+                <p>I'd love to speak with you about any of my programming projects.</p>
             </div>
         </div>
         </div>
 
         <figure class="skill-icon">
-            <img class="front" onmouseover="img_on(this)" onmouseout="img_off(this)" src="styles/icon5.png" style="padding-top: 40px"/>
+            <img onmouseover="img_on(this)" onmouseout="img_off(this)" src="styles/icon5.png" style="padding-top: 40px"/>
         </figure>
 
     </div>
