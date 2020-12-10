@@ -14,14 +14,37 @@
     <!-- MOVE THIS AFTER MAKING THE PAGE - LINKING WON'T WORK (Later Me: Because it's on a local machine) -->
     <script>
         function img_on(img) {
-            img.src = "styles/icon6.png";
+            let newurl = "";
+            let theseclasses = document.getElementsByClassName("icon");
+            for (i = 0; i < theseclasses.length; i++)
+            {
+                let thisclass = theseclasses.item(i).classList[1];
+                let thisurl = "styles/icon-" + thisclass + ".png";
+                if ((img.getAttribute("src")) == thisurl)
+                {
+                    newurl = "styles/icon-" + thisclass + "-flip.png";  
+                }
+            };
+            img.src = newurl;
         }
-         function img_off(img) {
-             img.src = "styles/icon5.png";
-         }
+
+        function img_off(img) {
+            let newurl = "";
+            let theseclasses = document.getElementsByClassName("icon");
+            for (i = 0; i < theseclasses.length; i++)
+            {
+                let thisclass = theseclasses.item(i).classList[1];
+                let thisurl = "styles/icon-" + thisclass + "-flip.png";
+                if ((img.getAttribute("src")) == thisurl)
+                {
+                    newurl = "styles/icon-" + thisclass + ".png";    
+                }
+            };
+            img.src = newurl;
+        }
 
          function lets_get_fancy() {
-            for(i=0; i<100; i++){
+            for(i=0; i<200; i++){
                 document.getElementById("big-box").innerHTML += '<div class="fancy-box" onmouseover="fancytime(this)" onmouseout="unfancy(this)"></div>'
             }
         }
@@ -77,13 +100,12 @@
     }
 
     .big-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
     }
 
     .fancy-box {
-        height: 50px;
-        width: auto;
+        height: 500px;
+        width: .5%;
         opacity: .50;
         z-index: 9;
     }
@@ -147,7 +169,7 @@
         <div class="skill">
         <h2>Full Stack Web Development</h2>
         <div class="skill-item">
-            <div class="skill-icon"><img src="styles/icon1.png"></div>
+            <div class="skill-icon"><img src="styles/icon-code.png" class="icon code" onmouseover="img_on(this)" onmouseout="img_off(this)" /></div>
             <div class="skill-text">
                 <h3>HTML/CSS | JavaScript | React | C# | Ruby | MVC | SQL | Git </h3>
                 <p>I'm a graduate of Academy Pittsburgh, a full stack web development boot camp.</p>
@@ -206,7 +228,7 @@
         <div class="skill">
         <h2>Other Skills</h2>
         <div class="skill-item">
-            <div class="skill-icon"><img src="styles/icon2.png"></div>
+            <div class="skill-icon"><img src="styles/icon-list.png" class="icon list" onmouseover="img_on(this)" onmouseout="img_off(this)" /></div>
             <div class="skill-text">
                 <h3>Web Copywriter | Content Strategist | SEO Pro | Analytics Whiz </h3>
                 <p>I'm interested in digital communication methods, and got paid to talk to people online for a living for over ten years.</p>
@@ -217,7 +239,7 @@
         <div class="skill">
         <h2>Talk To Me About</h2>
         <div class="skill-item">
-            <div class="skill-icon"><img src="styles/icon3.png"></div>
+            <div class="skill-icon"><img src="styles/icon-game.png"      class="icon game"onmouseover="img_on(this)" onmouseout="img_off(this)" /></div>
             <div class="skill-text">
                 <h3>Board Game Design | Knitting Pattern Design | Communications in the Age of Zoom</h3>
                 <p>When I'm not in front of a computer, I'm probably creating a new board game, designing a knitted shawl, or practicing being a good friend from a distance.
@@ -237,7 +259,7 @@
         <div class="skill">
         <h2>Let’s Chat</h2>
         <div class="skill-item">
-            <div class="skill-icon"><img src="styles/icon4.png"></div>
+            <div class="skill-icon"><img src="styles/icon-phone.png"  class="icon phone" onmouseover="img_on(this)" onmouseout="img_off(this)" /></div>
             <div class="skill-text">
                 <h3><a href="https://www.linkedin.com/in/jasmineadavis/">LinkedIn</a> | <a href="https://github.com/athingforjaz">Github</a></h3>
                 <p>Or just <a href="mailto:jasminedaviswork@gmail.com">email me!</a> </p>
@@ -247,13 +269,13 @@
         </div>
 
         <figure class="skill-icon">
-            <img onmouseover="img_on(this)" onmouseout="img_off(this)" src="styles/icon5.png" style="padding-top: 40px"/>
+            <img src="styles/icon-palm.png" style="padding-top: 40px"  class="icon palm"onmouseover="img_on(this)" onmouseout="img_off(this)"/>
         </figure>
 
     </div>
 
 
-
+<!-- Bootstrap components -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
