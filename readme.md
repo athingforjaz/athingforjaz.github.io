@@ -1,7 +1,6 @@
 # Portfolio Site 
 
 ## To-Do
-- Add links to carousel
 - Consider new styling options for divs to make each skill section stand out more
 - To consider: Is it time to move to React? 
 - Move CSS & JavaScript to linked files
@@ -18,4 +17,5 @@
 - Apply hover styling to all icons
 -- Recolor icons for hover styling :-)
 - Add some fun JavaScript-y stuff
+- Add links to carousel
 

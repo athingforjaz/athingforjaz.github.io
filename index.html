@@ -84,6 +84,12 @@
         font-family: 'Varela Round', sans-serif;
         color: white;
     }
+    a {
+        color: white;
+    }
+    a:hover {
+        color: #daf037;
+    }
 
     .hero-text {
         padding-top: 20px;
@@ -142,10 +148,7 @@
         height: auto;
         margin: 10px;
     }
-    
-    .carousel-caption {
-        /* here there be code */
-    }
+
     .carousel-img {
     -webkit-mask-image: -webkit-gradient(linear, left top, 
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
@@ -188,21 +191,27 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="styles/carousel-biknary.png" alt="Biknary knitting pattern generator" class="carousel-img">
+                <a href="https://github.com/athingforjaz/biknary">
+                    <img src="styles/carousel-biknary.png" alt="Biknary knitting pattern generator" class="carousel-img">
+                </a>
                 <div class="carousel-caption">
-                    <span><strong>Biknary</strong>, a visual knitting pattern generator in Ruby.</span>
+                    <a href="https://github.com/athingforjaz/biknary"><span><strong>Biknary</strong>, a visual knitting pattern generator in Ruby.</span></a>
                 </div>
               </div>
               <div class="item">
-                <img src="styles/carousel-calculator.png" alt="90s Calculator" class="carousel-img">
+                <a href="https://github.com/athingforjaz/90s-calc">
+                    <img src="styles/carousel-calculator.png" alt="90s Calculator" class="carousel-img">
+                </a>
                 <div class="carousel-caption">
-                    <span><strong>90s Calculator,</strong>, a 90s-themed calculator using JavaScript, HTML, and CSS.</span>
+                    <a href="https://github.com/athingforjaz/90s-calc"><span><strong>90s Calculator,</strong>, a 90s-themed calculator using JavaScript, HTML, and CSS.</span></a>
                 </div>
               </div>
               <div class="item">
-                <img src="styles/carousel-note-leaver.png" alt="Note Leaver" class="carousel-img">
+                <a href="https://github.com/athingforjaz/note-leaver">
+                    <img src="styles/carousel-note-leaver.png" alt="Note Leaver" class="carousel-img">
+                </a>
                 <div class="carousel-caption">
-                    <span><strong>Note Leaver,</strong>, a 90s-themed sticky note application using Ruby on Rails, JavaScript, HTML, and CSS.</span>
+                    <a href="https://github.com/athingforjaz/note-leaver"><span><strong>Note Leaver,</strong>, a 90s-themed sticky note application using Ruby on Rails, JavaScript, HTML, and CSS.</span></a>
                 </div>
               </div>
               <div class="item">
