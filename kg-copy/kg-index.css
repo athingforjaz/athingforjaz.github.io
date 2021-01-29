@@ -16,7 +16,7 @@ body {
 }
 
 span, p, li {
-    font-size: 18px;
+    font-size: 1.3vmax;
 }
 
 a:link {
@@ -29,13 +29,13 @@ a:visited {
 
 h1 {
     font-family: 'Collegiate', sans-serif;
-    font-size: 6em;
+    font-size: 6vmax;
     text-shadow: 2px 2px 2px #000;
 }
 
 h2 {
     font-family: 'Collegiate', sans-serif;
-    font-size: 3em;
+    font-size: 3.5vmax;
     text-shadow: 2px 2px 2px #000;
 }
 
@@ -59,7 +59,7 @@ h2 {
 }
 
 .phone {
-    font-size: 2em;
+    font-size: 3vmax;
 }
 
 .services-container {
