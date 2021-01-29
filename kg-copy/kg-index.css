@@ -1,0 +1,88 @@
+@font-face{ 
+	font-family: 'Collegiate';
+	src: url('kg-styles/collegiate-webfont.woff') format('woff');
+}
+
+body {
+    background-image: url(./kg-styles/prism.png);
+    background-color: black;
+    /* Background pattern from Toptal Subtle Patterns */
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+span, p, li {
+    font-size: 18px;
+}
+
+a:link {
+    color: lightblue;
+}
+
+a:visited {
+    color: blue;
+}
+
+h1 {
+    font-family: 'Collegiate', sans-serif;
+    font-size: 6em;
+    text-shadow: 2px 2px 2px #000;
+}
+
+h2 {
+    font-family: 'Collegiate', sans-serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.address {
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.phone {
+    font-size: 2em;
+}
+
+.services-container {
+    padding-bottom: 25px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 5%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 70%;
+}
+
+.footer {
+    padding: 20px;
+}
