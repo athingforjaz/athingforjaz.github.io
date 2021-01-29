@@ -16,7 +16,7 @@ body {
 }
 
 span, p, li {
-    font-size: 1.3vmax;
+    font-size: 1.8vmax;
 }
 
 a:link {
@@ -29,13 +29,13 @@ a:visited {
 
 h1 {
     font-family: 'Collegiate', sans-serif;
-    font-size: 6vmax;
+    font-size: 7vmax;
     text-shadow: 2px 2px 2px #000;
 }
 
 h2 {
     font-family: 'Collegiate', sans-serif;
-    font-size: 3.5vmax;
+    font-size: 4vmax;
     text-shadow: 2px 2px 2px #000;
 }
 
@@ -80,7 +80,7 @@ h2 {
 }
 
 .about-text {
-    width: 70%;
+    width: 85%;
 }
 
 .footer {
